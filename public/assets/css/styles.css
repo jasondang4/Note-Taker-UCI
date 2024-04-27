@@ -1,0 +1,73 @@
+html, body {
+    height: 100%;
+    margin: 0;
+    font-family: Arial, sans-serif; /* Specify a default font */
+  }
+  
+  .action-button {
+    display: none;
+  }
+  
+  .tool-icon {
+    margin: 0 20px; /* Adjusted margins */
+    font-size: 24px; /* Uniform font size in px */
+    cursor: pointer;
+  }
+  
+  .editable-area, .editable-title {
+    color: #333; /* Darker shade of black */
+    width: 100%;
+    background: transparent; /* Explicitly define background */
+    border: 0 solid transparent; /* Clear any default borders */
+  }
+  
+  .editable-area {
+    resize: none;
+    height: calc(100% - 60px); /* Adjust height calculation slightly */
+    padding: 20px 15px; /* Padding for better text alignment */
+  }
+  
+  .editable-title {
+    padding: 10px 0; /* Padding adjustment for title */
+    font-size: 2.5rem; /* Slightly smaller font size */
+    margin-top: 10px; /* Adjusted top margin */
+  }
+  
+  .editable-title:read-only,
+  .editable-area:read-only {
+    color: #999; /* Lighter gray for readonly elements */
+  }
+  
+  .notes-wrapper .note-card {
+    height: 100vh; /* Use viewport units for full height */
+    border-bottom: none;
+    border-radius: 0; /* Remove all border-radius */
+  }
+  
+  .notes-wrapper {
+    padding-left: 0;
+  }
+  
+  .notes-wrapper .note-list,
+  .notes-wrapper .note-list-item:first-child,
+  .notes-wrapper .note-card {
+    border-top: none;
+    border-radius: 0; /* Consistent border-radius removal */
+  }
+  
+  .note-list-title {
+    display: inline;
+    width: 80%; /* Slightly more width */
+  }
+  
+  .notes-wrapper i {
+    font-size: 16px; /* Changed font size */
+    cursor: pointer;
+  }
+  
+  .notes-wrapper .note-list-item {
+    border: none; /* Remove all borders */
+    padding: 25px; /* Increase padding */
+    cursor: pointer;
+  }
+  
